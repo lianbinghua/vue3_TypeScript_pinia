@@ -1,18 +1,18 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-20 20:25:03
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-26 21:50:47
+ * @Author: lianbinghua
+ * @Date: 2023-09-20 20:25:03
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-26 21:50:47
 -->
 <script setup lang="ts">
-import Logo from './logo/index.vue'
-import Menu from './menu/index.vue'
-import TabBar from './tabbar/index.vue'
-import Main from './main/index.vue'
 import useLayOutSettingStore from '@/store/modules/setting'
 import useUserStore from '@/store/modules/user'
 import { useRoute } from 'vue-router'
+import Logo from './logo/index.vue'
+import Main from './main/index.vue'
+import Menu from './menu/index.vue'
+import TabBar from './tabbar/index.vue'
 
 let userStore = useUserStore()
 let $route = useRoute()

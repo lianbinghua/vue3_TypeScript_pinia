@@ -1,19 +1,19 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-28 11:47:41
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-29 16:27:31
+ * @Author: lianbinghua
+ * @Date: 2023-09-28 11:47:41
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-29 16:27:31
 -->
 <script setup lang="ts">
-import { reqAttr } from '@/api/product/attr'
+import { reqAttr } from '@/api/product/attr';
 import {
-  reqSpuImageList,
-  reqSpuHasSaleAttr,
-  reqAddSku,
-} from '@/api/product/spu'
-import { ref, reactive } from 'vue'
-import type { SkuData } from '@/api/product/spu/type'
+reqAddSku,
+reqSpuHasSaleAttr,
+reqSpuImageList,
+} from '@/api/product/spu';
+import type { SkuData } from '@/api/product/spu/type';
+import { reactive, ref } from 'vue';
 let $emit = defineEmits(['changeScene'])
 let attrArr = ref<any>([])
 let saleArr = ref<any>([])

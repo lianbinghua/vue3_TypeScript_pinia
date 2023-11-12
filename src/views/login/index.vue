@@ -1,18 +1,18 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-19 17:38:16
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-23 22:02:06
+ * @Author: lianbinghua
+ * @Date: 2023-09-19 17:38:16
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-23 22:02:06
 -->
 <script setup lang="ts">
-import { User, Lock, Warning } from '@element-plus/icons-vue'
-import { Ref, computed, reactive, ref } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { ElNotification } from 'element-plus'
-import { getTime } from '@/utils/time'
-import useUserStore from '@/store/modules/user'
 import Identify from '@/components/VerifyCode/index.vue'
+import useUserStore from '@/store/modules/user'
+import { getTime } from '@/utils/time'
+import { Lock, User, Warning } from '@element-plus/icons-vue'
+import { ElNotification } from 'element-plus'
+import { Ref, reactive, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 // VerifyCode import
 
 let $router = useRouter()
@@ -132,7 +132,7 @@ const rules = {
       <el-col :span="12" :xs="0"></el-col>
       <el-col :span="12" :xs="24">
         <el-card class="login_form">
-          <h1>Vue-Admin</h1>
+          <h1>Vue3-TS</h1>
           <el-form :model="loginForm" :rules="rules" ref="loginForms">
             <el-form-item prop="username">
               <el-input

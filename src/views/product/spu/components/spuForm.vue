@@ -1,31 +1,31 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-28 11:47:08
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-28 22:46:31
+ * @Author: lianbinghua
+ * @Date: 2023-09-28 11:47:08
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-28 22:46:31
 -->
 <script setup lang="ts">
-import type {
-  SpuData,
-  AllTradeMark,
-  SpuHasImg,
-  SaleAttrResponseData,
-  HasSaleAttrResponseData,
-  Trademark,
-  SpuImg,
-  SaleAttr,
-  HasSaleAttr,
-  SaleAttrValue,
-} from '@/api/product/spu/type'
 import {
-  reqAllTradeMark,
-  reqSpuImageList,
-  reqSpuHasSaleAttr,
-  reqAllSalAttr,
-  reqAddOrUpdateSpu,
-} from '@/api/product/spu'
-import { ref, computed, nextTick } from 'vue'
+reqAddOrUpdateSpu,
+reqAllSalAttr,
+reqAllTradeMark,
+reqSpuHasSaleAttr,
+reqSpuImageList,
+} from '@/api/product/spu';
+import type {
+AllTradeMark,
+HasSaleAttr,
+HasSaleAttrResponseData,
+SaleAttr,
+SaleAttrResponseData,
+SaleAttrValue,
+SpuData,
+SpuHasImg,
+SpuImg,
+Trademark,
+} from '@/api/product/spu/type';
+import { computed, nextTick, ref } from 'vue';
 let $emit = defineEmits(['changeScene'])
 let saleAttrIdAndValueName = ref<string>('')
 const cancel = () => {

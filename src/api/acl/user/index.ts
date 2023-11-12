@@ -1,16 +1,16 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-30 21:19:56
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-31 20:42:46
+ * @Author: lianbinghua
+ * @Date: 2023-09-30 21:19:56
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-31 20:42:46
  */
 import request from '@/utils/request'
 import type {
-  UserResponseData,
-  User,
-  AllRoleResponseData,
-  SetRoleData,
+    AllRoleResponseData,
+    SetRoleData,
+    User,
+    UserResponseData,
 } from './type'
 
 enum API {

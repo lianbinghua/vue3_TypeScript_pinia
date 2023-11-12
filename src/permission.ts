@@ -1,14 +1,14 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-22 22:06:16
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-02 10:45:52
+ * @Author: lianbinghua
+ * @Date: 2023-09-22 22:06:16
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-02 10:45:52
  */
 import router from '@/router'
-import setting from './setting'
 import nprogress from 'nprogress'
 import 'nprogress/nprogress.css'
+import setting from './setting'
 import pinia from './store'
 import useUserStore from './store/modules/user'
 nprogress.configure({ showSpinner: false })

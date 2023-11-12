@@ -1,16 +1,16 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-21 16:18:38
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-27 23:22:03
+ * @Author: lianbinghua
+ * @Date: 2023-09-21 16:18:38
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-27 23:22:03
 -->
 <script setup lang="ts">
-import useCategoryStore from '@/store/modules/category'
+import { reqAddOrUpdateAttr, reqAttr, reqRemoveAttr } from '@/api/product/attr';
+import type { Attr, AttrResponseData, AttrValue } from '@/api/product/attr/type';
+import useCategoryStore from '@/store/modules/category';
+import { nextTick, onBeforeUnmount, reactive, ref, watch } from 'vue';
 let categoryStore = useCategoryStore()
-import { watch, ref, reactive, nextTick, onBeforeUnmount } from 'vue'
-import { reqAttr, reqAddOrUpdateAttr, reqRemoveAttr } from '@/api/product/attr'
-import type { AttrResponseData, Attr, AttrValue } from '@/api/product/attr/type'
 let attrArr = ref<Attr[]>([])
 let scene = ref<number>(0)
 let flag = ref<boolean>(true)

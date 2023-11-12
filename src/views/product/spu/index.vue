@@ -1,24 +1,24 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-21 16:19:09
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-29 19:30:22
+ * @Author: lianbinghua
+ * @Date: 2023-09-21 16:19:09
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-29 19:30:22
 -->
 <script setup lang="ts">
-import { ref, watch, onBeforeUnmount } from 'vue'
-import useCategoryStore from '@/store/modules/category'
+import { reqRemoveAttr } from '@/api/product/attr'
 import { reqHasSpu, reqSkuList } from '@/api/product/spu'
 import type {
-  HasSpuResponseData,
-  Records,
-  SkuInfoData,
-  SpuData,
+HasSpuResponseData,
+Records,
+SkuInfoData,
+SpuData,
 } from '@/api/product/spu/type'
-import SpuForm from './components/spuForm.vue'
-import SkuForm from './components/skuForm.vue'
 import { SkuData } from '@/api/product/spu/type'
-import { reqRemoveAttr } from '@/api/product/attr'
+import useCategoryStore from '@/store/modules/category'
+import { onBeforeUnmount, ref, watch } from 'vue'
+import SkuForm from './components/skuForm.vue'
+import SpuForm from './components/spuForm.vue'
 let categoryStore = useCategoryStore()
 let scene = ref<number>(0)
 

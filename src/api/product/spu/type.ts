@@ -1,9 +1,9 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-28 11:06:52
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-29 17:12:21
+ * @Author: lianbinghua
+ * @Date: 2023-09-28 11:06:52
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-29 17:12:21
  */
 export interface ResponseData {
   code: number

@@ -1,22 +1,22 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-20 21:33:11
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-01 20:55:44
+ * @Author: lianbinghua
+ * @Date: 2023-09-20 21:33:11
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-01 20:55:44
 -->
 <script setup lang="ts">
-import { ref } from 'vue'
+import useLayOutSettingStore from '@/store/modules/setting';
+import useUserStore from '@/store/modules/user';
 import {
-  Refresh,
-  Setting,
-  FullScreen,
-  ArrowDown,
-} from '@element-plus/icons-vue'
-import useLayOutSettingStore from '@/store/modules/setting'
+ArrowDown,
+FullScreen,
+Refresh,
+Setting,
+} from '@element-plus/icons-vue';
+import { ref } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 let layoutSettingStore = useLayOutSettingStore()
-import useUserStore from '@/store/modules/user'
-import { useRouter, useRoute } from 'vue-router'
 let $router = useRouter()
 let $route = useRoute()
 let userStore = useUserStore()

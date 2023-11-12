@@ -1,23 +1,23 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-21 16:11:26
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-01 19:51:29
+ * @Author: lianbinghua
+ * @Date: 2023-09-21 16:11:26
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-01 19:51:29
 -->
 <script setup lang="ts">
-import { ref, onMounted, reactive } from 'vue'
 import {
-  reqAllPermission,
-  reqAddOrUpdateMenu,
-  reqRemoveMenu,
-} from '@/api/acl/menu'
+reqAddOrUpdateMenu,
+reqAllPermission,
+reqRemoveMenu,
+} from '@/api/acl/menu';
 import type {
-  PermissionResponseData,
-  PermissionList,
-  Permission,
-  MenuParams,
-} from '@/api/acl/menu/type'
+MenuParams,
+Permission,
+PermissionList,
+PermissionResponseData,
+} from '@/api/acl/menu/type';
+import { onMounted, reactive, ref } from 'vue';
 
 let PermissionArr = ref<PermissionList>([])
 let dialogVisible = ref<boolean>(false)

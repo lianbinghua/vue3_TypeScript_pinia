@@ -1,21 +1,21 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-20 10:58:16
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-02 11:27:32
+ * @Author: lianbinghua
+ * @Date: 2023-09-20 10:58:16
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-02 11:27:32
  */
-import { defineStore } from 'pinia'
-import router from '@/router'
-import { reqLogin, reqUserInfo, reqLogOut } from '@/api/user'
+import { reqLogOut, reqLogin, reqUserInfo } from '@/api/user'
 import type {
   LoginFormData,
   LoginResponseData,
   userInfoResponseData,
 } from '@/api/user/type'
+import router from '@/router'
+import { anyRoute, asyncRoute, constantRoute } from '@/router/routes'
+import { GET_TOKEN, REMOVE_TOKEN, SET_TOKEN } from '@/utils/token'
+import { defineStore } from 'pinia'
 import type { UserState } from './types/types'
-import { SET_TOKEN, GET_TOKEN, REMOVE_TOKEN } from '@/utils/token'
-import { constantRoute, asyncRoute, anyRoute } from '@/router/routes'
 
 // @ts-ignore
 import cloneDeep from 'lodash/cloneDeep'

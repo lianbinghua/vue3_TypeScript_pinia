@@ -1,24 +1,24 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-21 16:19:04
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-31 19:59:01
+ * @Author: lianbinghua
+ * @Date: 2023-09-21 16:19:04
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-31 19:59:01
 -->
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 import {
-  reqSkuList,
-  reqSaleSku,
-  reqCancelSale,
-  reqSkuInfo,
-  reqRemoveSku,
-} from '@/api/product/sku'
+reqCancelSale,
+reqRemoveSku,
+reqSaleSku,
+reqSkuInfo,
+reqSkuList,
+} from '@/api/product/sku';
 import type {
-  SkuData,
-  SkuResponseData,
-  SkuInfoData,
-} from '@/api/product/sku/type'
+SkuData,
+SkuInfoData,
+SkuResponseData,
+} from '@/api/product/sku/type';
+import { onMounted, ref } from 'vue';
 let pageNo = ref<number>(1)
 let pageSize = ref<number>(10)
 let total = ref(0)

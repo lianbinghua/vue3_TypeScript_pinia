@@ -1,13 +1,13 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-19 17:38:54
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-02 15:09:08
+ * @Author: lianbinghua
+ * @Date: 2023-09-19 17:38:54
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-02 15:09:08
 -->
 <script setup lang="ts">
-import { getTime } from '@/utils/time'
-import useUserStore from '@/store/modules/user'
+import useUserStore from '@/store/modules/user';
+import { getTime } from '@/utils/time';
 let userStore = useUserStore()
 </script>
 <template>

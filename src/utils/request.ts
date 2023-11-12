@@ -1,14 +1,14 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-18 12:11:32
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-23 14:53:42
+ * @Author: lianbinghua
+ * @Date: 2023-09-18 12:11:32
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-23 14:53:42
  */
 // 二次封装axios
+import useUserStore from '@/store/modules/user'
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
-import useUserStore from '@/store/modules/user'
 let request = axios.create({
   baseURL: import.meta.env.VITE_APP_BASE_API,
   timeout: 5000,

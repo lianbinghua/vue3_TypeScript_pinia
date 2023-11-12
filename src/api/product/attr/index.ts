@@ -1,12 +1,12 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-26 15:59:58
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-27 23:09:31
+ * @Author: lianbinghua
+ * @Date: 2023-09-26 15:59:58
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-27 23:09:31
  */
 import request from '@/utils/request'
-import type { CategoryResponseData, AttrResponseData, Attr } from './type'
+import type { Attr, AttrResponseData, CategoryResponseData } from './type'
 enum API {
   C1_URL = '/admin/product/getCategory1',
   C2_URL = '/admin/product/getCategory2/',

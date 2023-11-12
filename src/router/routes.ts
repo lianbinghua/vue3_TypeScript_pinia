@@ -1,9 +1,9 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-19 17:46:49
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-02 10:33:35
+ * @Author: lianbinghua
+ * @Date: 2023-09-19 17:46:49
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-02 10:33:35
  */
 export const constantRoute = [
   {

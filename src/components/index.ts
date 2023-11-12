@@ -1,13 +1,13 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-17 20:10:16
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-21 13:57:55
+ * @Author: lianbinghua
+ * @Date: 2023-09-17 20:10:16
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-21 13:57:55
  */
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import type { App } from 'vue'
 import * as components from './components'
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 const install = function (app: App) {
   Object.entries(components).forEach(([key, value]) => {
     app.component(key, value)

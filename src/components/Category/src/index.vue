@@ -1,13 +1,13 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-25 22:51:11
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-26 22:33:41
+ * @Author: lianbinghua
+ * @Date: 2023-09-25 22:51:11
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-26 22:33:41
 -->
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import useCategoryStore from '@/store/modules/category'
+import useCategoryStore from '@/store/modules/category';
+import { onMounted } from 'vue';
 
 let categoryStore = useCategoryStore()
 onMounted(() => {

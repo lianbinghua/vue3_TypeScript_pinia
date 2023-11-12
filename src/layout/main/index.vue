@@ -1,13 +1,13 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-21 17:22:48
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-21 20:58:27
+ * @Author: lianbinghua
+ * @Date: 2023-09-21 17:22:48
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-21 20:58:27
 -->
 <script setup lang="ts">
-import useLayOutSettingStore from '@/store/modules/setting'
-import { watch, ref, nextTick } from 'vue'
+import useLayOutSettingStore from '@/store/modules/setting';
+import { nextTick, ref, watch } from 'vue';
 let layOutSettingStore = useLayOutSettingStore()
 
 let flag = ref(true)

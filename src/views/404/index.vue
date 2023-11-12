@@ -1,12 +1,12 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-19 17:39:15
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-02 11:22:09
+ * @Author: lianbinghua
+ * @Date: 2023-09-19 17:39:15
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-02 11:22:09
 -->
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { useRouter } from 'vue-router';
 let $router = useRouter()
 const goHome = () => {
   $router.push('/home')

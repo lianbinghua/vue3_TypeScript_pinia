@@ -1,9 +1,9 @@
 /*
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-24 14:09:19
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-24 22:13:03
+ * @Author: lianbinghua
+ * @Date: 2023-09-24 14:09:19
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-24 22:13:03
  */
 import request from '@/utils/request'
 import type { TradeMark, TradeMarkResponseData } from './type'

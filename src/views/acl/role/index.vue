@@ -1,27 +1,27 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-21 16:11:08
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-01 14:59:11
+ * @Author: lianbinghua
+ * @Date: 2023-09-21 16:11:08
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-01 14:59:11
 -->
 <script setup lang="ts">
-import { ref, onMounted, reactive, nextTick } from 'vue'
 import {
-  reqRemoveRole,
-  reqAllRoleList,
-  reqAddOrUpdateRole,
-  reqAllMenuList,
-  reqSetPermission,
-} from '@/api/acl/role'
+reqAddOrUpdateRole,
+reqAllMenuList,
+reqAllRoleList,
+reqRemoveRole,
+reqSetPermission,
+} from '@/api/acl/role';
 import type {
-  RoleResponseData,
-  Records,
-  RoleData,
-  MenuResponseData,
-  MenuList,
-} from '@/api/acl/role/type'
-import useLayOutSettingStore from '@/store/modules/setting'
+MenuList,
+MenuResponseData,
+Records,
+RoleData,
+RoleResponseData,
+} from '@/api/acl/role/type';
+import useLayOutSettingStore from '@/store/modules/setting';
+import { nextTick, onMounted, reactive, ref } from 'vue';
 let pageNo = ref<number>(1)
 
 let pageSize = ref<number>(10)

@@ -1,12 +1,12 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-20 20:34:50
- * @LastEditors: Huccct
- * @LastEditTime: 2023-05-29 09:35:48
+ * @Author: lianbinghua
+ * @Date: 2023-09-20 20:34:50
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-09-29 09:35:48
 -->
 <script setup lang="ts">
-import setting from '@/setting'
+import setting from '@/setting';
 </script>
 <template>
   <div class="logo" v-if="setting.logoHidden">

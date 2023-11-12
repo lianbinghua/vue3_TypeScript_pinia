@@ -1,24 +1,24 @@
 <!--
  * @Description: Stay hungry，Stay foolish
- * @Author: Huccct
- * @Date: 2023-05-21 16:19:15
- * @LastEditors: Huccct
- * @LastEditTime: 2023-06-02 11:35:45
+ * @Author: lianbinghua
+ * @Date: 2023-09-21 16:19:15
+ * @LastEditors: lianbinghua
+ * @LastEditTime: 2023-10-02 11:35:45
 -->
 <script setup lang="ts">
-import { ref, onMounted, reactive, nextTick } from 'vue'
+import { nextTick, onMounted, reactive, ref } from 'vue';
 
 import {
-  reqHasTradeMark,
-  reqAddOrUpdateTrademark,
-  reqDeleteTrademark,
-} from '@/api/product/trademark'
+reqAddOrUpdateTrademark,
+reqDeleteTrademark,
+reqHasTradeMark,
+} from '@/api/product/trademark';
 import type {
-  Records,
-  TradeMark,
-  TradeMarkResponseData,
-} from '@/api/product/trademark/type'
-import { UploadProps } from 'element-plus/es/components/upload/src/upload'
+Records,
+TradeMark,
+TradeMarkResponseData,
+} from '@/api/product/trademark/type';
+import { UploadProps } from 'element-plus/es/components/upload/src/upload';
 
 let pageNo = ref<number>(1)
 
